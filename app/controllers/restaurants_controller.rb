@@ -6,5 +6,6 @@ class RestaurantsController < ApplicationController
   end
 
   def create
+    render plain: params[:restaurant].inspect
   end
 end
